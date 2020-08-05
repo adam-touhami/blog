@@ -71,6 +71,7 @@ if ( isset($_POST['envoyer']) == true && isset($_POST['commentaire']) && strlen(
                 $querylogin = mysqli_query($cnx, $requetelogin);
                 $resultatlogin = mysqli_fetch_all($querylogin, MYSQLI_ASSOC);
 
+                include("like.php"); // SYSTEME DE LIKE/DISLIKE
                 ?>
                 <section class="cmessages">
                     <article class="messageleft">
@@ -84,7 +85,23 @@ if ( isset($_POST['envoyer']) == true && isset($_POST['commentaire']) && strlen(
                         ?>
                         </article>
                         <section>
-                            
+                            <article class="likebtn">
+                                <form method="post" action="article.php?idarticle=<?php echo $intidarticle; ?>">
+                                    <div id="formvote">
+                                    <?php
+                                    if ( isset($_SESSION['login']) && $resultat3[0]['COUNT(*)'] != "0" ) {
+                                        echo "<input type=\"submit\" name=\"likebutton".$a."\" id=\"likev\" value=\"like\" required><div class=\"resultatvotes\">".$resultat5[0]['COUNT(*)']."</div>";
+                                        echo "<input type=\"submit\" name=\"dislikebutton".$a."\" id=\"dislike\" value=\"dislike\" required><div class=\"resultatvotes\">".$resultat6[0]['COUNT(*)']."</div>";
+                                    }
+                                    elseif ( isset($_SESSION['login']) && $resultat4[0]['COUNT(*)'] != "0" ) {
+                                        echo "<input type=\"submit\" name=\"likebutton".$a."\" id=\"like\" value=\"like\" required><div class=\"resultatvotes\">".$resultat5[0]['COUNT(*)']."</div>";
+                                        echo "<input type=\"submit\" name=\"dislikebutton".$a."\" id=\"dislikev\" value=\"dislike\" required><div class=\"resultatvotes\">".$resultat6[0]['COUNT(*)']."</div>";
+                                    }
+                                    else {
+                                        echo "<input type=\"submit\" name=\"likebutton".$a."\" id=\"like\" value=\"like\" required><div class=\"resultatvotes\">".$resultat5[0]['COUNT(*)']."</div>";
+                                        echo "<input type=\"submit\" name=\"dislikebutton".$a."\" id=\"dislike\" value=\"dislike\" required><div class=\"resultatvotes\">".$resultat6[0]['COUNT(*)']."</div>";
+                                    }
+                                    ?>
                                     </div>
                                 </form>
                             </article>
