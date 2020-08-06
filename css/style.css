@@ -524,10 +524,10 @@ footer a {
 }
 
 .profilepartimg {
-    height: 340px;
-    width: 340px;
+    height: 310px;
+    width: 310px;
     border-radius: 50%;
-    background-image: url(../img/profilepic.png);
+    background-image: url(../img/rene-malleville.jpg);
     border: 4px solid #436e87;
 }
 

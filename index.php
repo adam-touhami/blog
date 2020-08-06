@@ -1,3 +1,4 @@
+
 <?php
 
 session_start();
@@ -22,6 +23,7 @@ $size = count($resultat);
     <meta charset="utf-8">
     <title>Blog - Accueil</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -53,7 +55,7 @@ $size = count($resultat);
         </article>
         <article class="basarticles">
                         <article class="basleftarticles">
-                            <p>Créé le <img class="iconarticles" src="img/icondate.png"><?php echo $resultat[$i]['date'];?> par <img class="iconarticles" src="img/iconuser.png"><?php echo $resultatuser[0]['login'];?></p>
+                            <p>Créé le <img class="iconarticles" src="img/icondate1.png"><?php echo $resultat[$i]['date'];?> par <img class="iconarticles" src="img/logo-user.png"><?php echo $resultatuser[0]['login'];?></p>
                         </article>
                         <article class="basrightarticles">
                             <a href="article.php?idarticle=<?php echo $resultat[$i]['id']; ?>">Voir plus</a>
@@ -70,9 +72,9 @@ $size = count($resultat);
     </section>
     <section class="indexright">
         <article class="profilepart">
-            <article class="profilepartimg"></article>
+            <article class="profilepartimg" width="300px" heigh="300px"></article>
             <h1>Qui suis-je ?</h1>
-            <p>Bonjour c'est Karim, et voici mon blog !</p>
+            <p>Bonjour c'est René, et voici mon blog les pitchounes !</p>
         </article>
         <article class="categoriepart">
             <h1>Catégories</h1>
