@@ -24,6 +24,7 @@ $size = count($resultat);
     <title>Blog - Accueil</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="icon" href="logo-om.png"/>
 </head>
 <body>
 

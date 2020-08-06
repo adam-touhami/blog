@@ -1,3 +1,4 @@
+
 <?php session_start() ?>
 
 <!DOCTYPE html>
@@ -7,6 +8,7 @@
 <head>
     <title>Inscription - Blog</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
 </head>
 
 <body>

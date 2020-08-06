@@ -1,5 +1,5 @@
 <header>
-        <a class="logoheader" href="index.php"><img class="logoheader" src="img/roamsweetroam-logo.png" alt="logoheader" /></a>
+        <a class="logoheader" href="index.php"><img class="logoheader" src="img/logo-om.png" alt="logoheader" /></a>
         <nav class="nav">
             <section class="navbtn">
                 <a class="link1" href="index.php">Accueil</a>
@@ -7,7 +7,6 @@
             <section class="navbtn">
                 <a class="link1" href="articles.php?start=0">Articles</a>
                 <section class="submenu">
-                   
                     <article class="dropdownsubmenu">
                         <a class="link2" href="articles.php?categorie=2&start=0">Conseils</a>
                     </article>
