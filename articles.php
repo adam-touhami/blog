@@ -39,7 +39,7 @@ include("header.php");
     <main class="mainarticles">
     <?php
     if ( isset ($_GET["start"]) ) {
-        foreach( $resultatrecuparticles as $values) {
+        foreach($resultatrecuparticles as $values) {
             $date = date("d-m-Y", strtotime($values[4]));
         ?>
             <section class="carticles">
@@ -54,7 +54,7 @@ include("header.php");
                 </article>
                 <article class="basarticles">
                     <article class="basleftarticles">
-                        <p>Créé le <img class="iconarticles" src="img/icondate.png"><?php echo $date;?> par <img class="iconarticles" src="img/iconuser.png"><?php echo $values[7];?></p>
+                        <p>Créé le <img class="iconarticles" src="img/icondate1.png"><?php echo $date;?> par <img class="iconarticles" src="img/logo-user.png"><?php echo $values[7];?></p>
                     </article>
                     <article class="basrightarticles">
                         <a href="article.php?idarticle=<?php echo $values[0]; ?>">Voir plus</a>
